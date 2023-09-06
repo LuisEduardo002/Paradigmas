@@ -71,5 +71,41 @@ class Conexion {
         this.nodo = nodo
     }
 }
-const inst=new MenuDijkstra()
-inst.iniciarMenu()
+
+const iniciarPrograma = () => {
+    const inst=new MenuDijkstra()
+    input("PROBANDOOOOOOOOOOOOOO")
+    print("BIENVENIDDDDDDDDDDDDOS")
+}
+
+const print = (mensaje) => {
+    const cuerpoHtml = document.getElementById("cuerpoHtml")
+    const contenedorMensaje = document.createElement("div")
+    const parrafoMensaje = document.createElement("p")
+
+    parrafoMensaje.textContent = mensaje
+
+    cuerpoHtml.appendChild(contenedorMensaje)
+    contenedorMensaje.appendChild(parrafoMensaje)
+}
+
+const input = (mensaje) => {
+    const cuerpoHtml = document.getElementById("cuerpoHtml")
+    const contenedorMensaje = document.createElement("div")
+    const parrafoMensaje = document.createElement("p")
+    const contenedorTexto = document.createElement("input")
+
+    parrafoMensaje.textContent = mensaje
+
+    cuerpoHtml.appendChild(contenedorMensaje)
+    contenedorMensaje.appendChild(parrafoMensaje)
+    cuerpoHtml.appendChild(contenedorTexto)
+
+
+}
+
+const limpiarHtml = () => {
+    const cuerpoHtml = document.getElementById("cuerpoHtml")
+    cuerpoHtml.innerHTML = ""
+    
+}
