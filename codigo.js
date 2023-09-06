@@ -94,12 +94,16 @@ const input = (mensaje) => {
     const contenedorMensaje = document.createElement("div")
     const parrafoMensaje = document.createElement("p")
     const contenedorTexto = document.createElement("input")
+    const botonConfirmar = document.createElement("button")
 
     parrafoMensaje.textContent = mensaje
+    botonConfirmar.innerHTML = "Confirmar"
+    botonConfirmar.onclick = 
 
     cuerpoHtml.appendChild(contenedorMensaje)
     contenedorMensaje.appendChild(parrafoMensaje)
     cuerpoHtml.appendChild(contenedorTexto)
+
 
 
 }
@@ -108,4 +112,32 @@ const limpiarHtml = () => {
     const cuerpoHtml = document.getElementById("cuerpoHtml")
     cuerpoHtml.innerHTML = ""
     
+}
+
+const recibirTexto = () => {
+    
+}
+
+const comprobarSiEsNombreValido = () => {
+
+}
+
+const comprobarSiNodoYaExiste = () => {
+
+}
+
+const comprobarCantidadDeConexiones = () => {
+
+}
+
+const comprobarSiConexionYaExiste = () => {
+
+}
+
+const comprobarSiPesoEsValido = () => {
+    
+}
+
+const comprobarSiValorEsNumerico = () => {
+
 }
